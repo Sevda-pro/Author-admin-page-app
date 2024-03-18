@@ -16,7 +16,6 @@ app.use(expressLayouts)
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }));
 const PORT = process.env.PORT || 5000
-
 const apprun = () => {
 	connectDB()
 	app.listen(PORT);
